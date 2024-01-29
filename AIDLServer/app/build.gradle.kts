@@ -27,7 +27,13 @@ android {
         targetCompatibility = JavaVersion.VERSION_1_8
     }
     buildFeatures {
+        compose = true
+        // Disable unused AGP features
+        buildConfig = false
         aidl = true
+        renderScript = false
+        resValues = false
+        shaders = false
     }
 }
 
